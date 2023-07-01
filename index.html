@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-conatiner">
+      <div class="main-section">
+        <div class="main-sectiontwo">
+          <div class="start-quiz" id="start">
+            Start Quiz <br />
+            <span style="font-size: 1rem; color: red; font-weight: bold">
+              • Every Question is Mandatory to attempt. <br />
+              • One mark for each.</span
+            >
+          </div>
+          <button id="start-button" onclick="start_quizz()">START</button>
+        </div>
+
+        <div class="container" id="containers">
+          <p id="timer">Time left: 00:00</p>
+
+          <div class="content">
+            <div
+              id="question-number"
+              style="font-weight: bold; margin-bottom: 5px"
+            ></div>
+            <p id="ques"></p>
+
+            <div class="options" id="labelfirst">
+              <input type="radio" name="opt" value="opt1" />
+              <label for="opt" id="opt1"></label>
+            </div>
+            <div class="options">
+              <input type="radio" name="opt" value="opt2" />
+              <label for="opt" id="opt2"></label>
+            </div>
+            <div class="options">
+              <input type="radio" name="opt" value="opt3" />
+              <label for="opt" id="opt3"></label>
+            </div>
+            <div class="options">
+              <input type="radio" name="opt" value="opt4" />
+              <label for="opt" id="opt4"></label>
+            </div>
+          </div>
+
+          <button id="next" onclick="next_question()">NEXT</button>
+        </div>
+        <div id="scores"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

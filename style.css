@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-conatiner {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.main-section {
+  background-color: #ffffff;
+  height: 65vh;
+  width: 70vw;
+  padding-bottom: 0.5%;
+  color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#question-number {
+  color: #0a6ebd;
+}
+#ques {
+  color: #7e1717;
+}
+
+#start {
+  font-size: 2.5rem;
+  margin-bottom: 4%;
+}
+.content {
+  width: 60vw;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+.options {
+  font-weight: 400;
+  margin-top: 4%;
+  font-size: 1.4rem;
+  color: #212a3e;
+}
+#start-button {
+  height: 60px;
+  width: 60%;
+  font-size: 2rem;
+  background-color: #394867;
+  color: #ffffff;
+  padding: 0 4% 0 4%;
+  border-radius: 0.3em;
+  cursor: pointer;
+  border-style: none;
+}
+#timer {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 50%;
+
+  width: fit-content;
+  padding: 1%;
+  background-color: #6527be;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+#next {
+  height: 60px;
+  width: 20%;
+  font-size: 2rem;
+  margin-left: 35%;
+  background-color: #394867;
+  color: #ffffff;
+
+  border-radius: 0.3em;
+  cursor: pointer;
+  border-style: none;
+}
+#containers {
+  display: none;
+}
+#scores {
+  color: #ff0060;
+  font-size: 2.5rem;
+  display: none;
+}
+@media (max-width: 1000px) {
+  .main-section {
+    height: 65vh;
+    width: 90vw;
+  }
+  .content {
+    width: 60vw;
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  .options {
+    margin-top: 6%;
+    font-size: 1rem;
+  }
+
+  #labelfirst {
+    margin-top: 12%;
+  }
+  #start-button {
+    height: 45px;
+    width: 40%;
+    font-size: 1.4rem;
+    margin-top: 15%;
+    margin-left: 0;
+  }
+  #next {
+    height: 45px;
+    width: 30%;
+    font-size: 1.4rem;
+    margin-top: 15%;
+    margin-left: 0;
+  }
+  #scores {
+    font-size: 1.7rem;
+  }
+  .main-sectiontwo {
+    margin-left: 5%;
+    /* margin-right: 5%; */
+  }
+  #timer {
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+}
